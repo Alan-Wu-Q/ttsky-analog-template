@@ -1,0 +1,58 @@
+MACRO inv
+  CLASS BLOCK ;
+  FOREIGN inv ;
+  ORIGIN 0.455 1.270 ;
+  SIZE 1.515 BY 3.220 ;
+  PIN out
+    ANTENNADIFFAREA 0.365400 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.650 -0.770 0.820 1.190 ;
+      LAYER mcon ;
+        RECT 0.650 0.390 0.820 1.110 ;
+        RECT 0.650 -0.690 0.820 -0.390 ;
+      LAYER met1 ;
+        RECT 0.620 0.330 0.850 1.170 ;
+        RECT 0.620 -0.750 0.850 -0.330 ;
+    END
+  END out
+  PIN in
+    ANTENNAGATEAREA 0.189000 ;
+    PORT
+      LAYER li1 ;
+        RECT -0.375 -0.285 -0.205 0.045 ;
+    END
+  END in
+  PIN vdd
+    ANTENNADIFFAREA 0.277800 ;
+    PORT
+      LAYER nwell ;
+        RECT -0.030 0.020 1.060 1.950 ;
+      LAYER li1 ;
+        RECT 0.010 1.560 1.010 1.760 ;
+        RECT 0.210 0.310 0.380 1.560 ;
+      LAYER mcon ;
+        RECT 0.050 1.570 0.240 1.750 ;
+        RECT 0.210 0.390 0.380 1.110 ;
+      LAYER met1 ;
+        RECT -0.030 1.500 1.060 1.800 ;
+        RECT 0.180 0.330 0.410 1.170 ;
+    END
+  END vdd
+  PIN gnd
+    ANTENNADIFFAREA 0.149000 ;
+    PORT
+      LAYER li1 ;
+        RECT 0.210 -1.010 0.380 -0.310 ;
+        RECT 0.090 -1.230 0.990 -1.010 ;
+      LAYER mcon ;
+        RECT 0.210 -0.690 0.380 -0.390 ;
+        RECT 0.150 -1.200 0.400 -1.020 ;
+      LAYER met1 ;
+        RECT 0.180 -0.750 0.410 -0.330 ;
+        RECT 0.030 -1.270 1.060 -0.930 ;
+    END
+  END gnd
+END inv
+END LIBRARY
+
